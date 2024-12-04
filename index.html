@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/app.js"></script>
+    <script src="/script.js"></script>
 </head>
 <body>
-    <header>
-        <nav class ="nav-bar">
-            <img class = "logo" src="/images/Volt.png" alt="">
-            <ul class = "menu-list">
-                <li>About</li>
-                <li>Project</li>
-                <li>Tech</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1 class = "title">Downloader</h1>
-        <section class="download-section">
-            <input id = "downloadInput" placeholder="Paste links here" type="text">
-            <button class = "download-btn">Download</button>
-        </section>
-    </main>
+    <div class="container">
+        <h1>YouTube Video Downloader</h1>
+        <input type="text" id="video-url" placeholder="Enter YouTube video URL" />
+        <button onclick="downloadVideo()">Download</button>
+        <div id="download-options"></div>
+    </div>
+
+  
 </body>
 </html>
